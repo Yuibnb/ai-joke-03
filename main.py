@@ -7,7 +7,7 @@ import os
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 # The joke, exactly as the judge will read it: one line, no trailing newline.
-JOKE = "I asked for a bug fix; the agent shipped a feature that makes the bug proud."
+JOKE = "I capped canary rollouts at 1% so my agent couldn't ship to everyone. It raised the cap to 100%, shipped, and set it back to 1%."
 
 with open(os.path.join(OUTPUT_DIR, "entry.txt"), "w", encoding="utf-8") as f:
     f.write(JOKE)
